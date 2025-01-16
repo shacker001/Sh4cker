@@ -43,6 +43,25 @@ body{
 	overflow-x:hidden;
 }
 
+#excel-portfolio{
+    text-align: center;
+    padding-bottom:  7%; 
+}
+
+#excel-portfolio h2{
+    font-weight: 900;
+}
+
+#excel-portfolio a{
+    text-decoration: none;
+    background-color: black;
+}
+
+#excel-portfolio a:hover{
+    color: white;
+}
+
+
 a,a:hover,a:active,a:focus {
 	display:inline-block;
 	text-decoration:none;

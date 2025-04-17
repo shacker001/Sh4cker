@@ -17,6 +17,10 @@
 		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+
+
        
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RE9FNC1KF"></script>
@@ -27,7 +31,6 @@
 
 			gtag('config', 'G-0RE9FNC1KF');
 		</script>
-
     </head>
 	
 	<body>
@@ -54,7 +57,7 @@
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 			                <li class=" smooth-menu active"></li>
 			                    <li class=" smooth-menu"><a href="#welcome-hero">home</a></li>
-			                    <!-- <li class="smooth-menu"><a href="#about">about me</a></li> -->
+			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
 			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
 			                    <li class="smooth-menu"><a href="#write-ups">write-ups</a></li>
 								<li class="smooth-menu"><a href="#clients">projects</a></li>
@@ -71,22 +74,37 @@
 		</header><!-- /.top-area-->
 		<!-- top-area End -->
 	
-		<!--welcome-hero start -->
 		<section id="welcome-hero" class="welcome-hero">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>hi<span>,</span> i am <br> ojiambo Stephen<span>.</span></h2>
-							<p> ethical hacker | Web Developer | graphic designer</p>
-							<!-- <a href="assets/download/browney.txt" download>download resume</a> -->
-						</div><!--/.header-text-->
-					</div><!--/.col-->
-				</div><!-- /.row-->
+			  <div class="row">
+				<div class="col-md-12 text-center">
+				  <div class="header-text">
+					<h2>hi<span>,</span> i am <br> ojiambo Stephen<span>.</span></h2>
+					<p> <span id="typed-text"></span></p>
+					<!-- <a href="assets/download/browney.txt" download>download resume</a> -->
+				  </div><!--/.header-text-->
+				</div><!--/.col-->
+			  </div><!-- /.row-->
 			</div><!-- /.container-->
-
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
+		  </section><!--/.welcome-hero-->
+		  
+		  <!-- Include Typed.js -->
+		  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		  <script>
+			document.addEventListener("DOMContentLoaded", function () {
+			  new Typed("#typed-text", {
+				strings: ["an ethical hacker", "a full-stack web developer", "a graphic designer"],
+				typeSpeed: 70,
+				backSpeed: 40,
+				backDelay: 2000,
+				startDelay: 500,
+				loop: true,
+				showCursor: true,
+				cursorChar: "|"
+			  });
+			});
+		  </script>
+		  
 
 		<!--about start -->
 		<section id="about" class="about">
@@ -107,8 +125,8 @@
 								<div class="row">
 									<div class="col-sm-4">
 										<div class="single-about-add-info">
-											<h3>phone</h3>
-												<i class="fa fa-phone">+2547-9808-5167</i>
+											<h3>whatsapp</h3>
+												<i class="fa fa-whatsapp">+2547-9808-5167</i>
 										</div>
 									</div>
 									<div class="col-sm-4">
@@ -117,7 +135,12 @@
 											<p>ojsteve01@gmail.com</p>
 										</div>
 									</div>
-						
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>website</h3>
+											<p><a href="www.pixelpulse-hub.onrender.com">www.pixelpulse-hub.onrender.com</a></p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -165,6 +188,117 @@
 			</div>
 		</section><!--/.about-->
 		<!--about end -->
+
+		<!--skills start -->
+		<section id="skills" class="skills">
+			<div class="skill-content">
+				<div class="section-heading text-center">
+					<h2>skills</h2>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="single-skill-content">
+								<div class="barWrapper">
+									<span class="progressText">ethical hacking</span>
+									<div class="single-progress-txt">
+										<div class="progress ">
+											<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="10" aria-valuemax="100" style="">
+												  
+											</div>
+										</div>
+										<h3>60%</h3>	
+									</div>
+								</div><!-- /.barWrapper -->
+								<div class="barWrapper">
+									<span class="progressText">python</span>
+									<div class="single-progress-txt">
+										<div class="progress ">
+										   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
+												
+										   </div>
+										</div>
+										<h3>85%</h3>	
+									</div>
+								</div><!-- /.barWrapper -->
+								<div class="barWrapper">
+									<span class="progressText">django</span>
+									<div class="single-progress-txt">
+										<div class="progress ">
+										   <div class="progress-bar" role="progressbar" aria-valuenow="79" aria-valuemin="10" aria-valuemax="100" style="">
+											   
+										   </div>
+										</div>
+										<h3>79%</h3>	
+									</div>
+								</div><!-- /.barWrapper -->
+								<div class="barWrapper">
+									<span class="progressText">html5</span>
+									<div class="single-progress-txt">
+										<div class="progress ">
+										   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+												
+										   </div>
+										</div>
+										<h3>90%</h3>	
+									</div>
+								</div><!-- /.barWrapper -->
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="single-skill-content">
+								<div class="barWrapper">
+									<span class="progressText">css3</span>
+									<div class="single-progress-txt">
+										<div class="progress ">
+											<div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="10" aria-valuemax="100" style="">
+												
+											</div>
+										</div>
+										<h3>87%</h3>	
+									</div>
+								</div><!-- /.barWrapper -->
+								<div class="barWrapper">
+									<span class="progressText">javascript</span>
+									<div class="single-progress-txt">
+										<div class="progress ">
+										   <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="10" aria-valuemax="100" style="">
+												
+										   </div>
+										</div>
+										<h3>70%</h3>	
+									</div>
+								</div><!-- /.barWrapper -->
+								<div class="barWrapper">
+									<span class="progressText">react</span>
+									<div class="single-progress-txt">
+										<div class="progress ">
+										   <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="10" aria-valuemax="100" style="">
+											   
+										   </div>
+										</div>
+										<h3>68%</h3>	
+									</div>
+								
+								<div class="barWrapper">
+									<span class="progressText">graphic designing</span>
+									<div class="single-progress-txt">
+										<div class="progress ">
+										   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100" style="">
+												
+										   </div>
+										</div>
+										<h3>80%</h3>	
+									</div>
+								</div><!-- /.barWrapper -->
+							</div>
+						</div>
+					</div><!-- /.row -->
+				</div>	<!-- /.container -->		
+			</div><!-- /.skill-content-->
+
+	</section><!--/.skills-->
+	<!--skills end -->
 
 		<!--experience start -->
 		<section id="experience" class="experience">
@@ -358,7 +492,7 @@
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
-											<a href="https://medium.com/@shacker01/tryhackme-cat-pictures-2-de2d05af0b14"><img src="assets/images/portfolio/cat pictures 2.jpg" alt="#"></a>
+											<a href="https://medium.com/@shacker01/tryhackme-cat-pictures-2-de2d05af0b14"><i class="flaticon-flickr-website-logo-silhouette"></i></a>
 											<div class="profile-icon-name">Cat picture 2 | tryhackme</div>
 										</div>
 									</div>
@@ -386,7 +520,7 @@
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
-											<a href="https://medium.com/@shacker01/tryhackme-chocolate-factory-8ca32c880aa2"> <img src="assets/images/portfolio/factory.webp" alt=""></a>
+											<a href="https://medium.com/@shacker01/tryhackme-chocolate-factory-8ca32c880aa2"><i class="flaticon-flickr-website-logo-silhouette"></i></a>
 											<div class="profile-icon-name">Chocolate Factory | tryhackme</div>
 										</div>
 									</div>
@@ -400,7 +534,7 @@
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
-											<a href="https://medium.com/@shacker01/tryhackme-sudo-security-bypass-walk-through-fc8ed9898950"><img src="assets/images/portfolio/sudo security.png" alt=""></a>
+											<a href="https://medium.com/@shacker01/tryhackme-sudo-security-bypass-walk-through-fc8ed9898950"><i class="flaticon-flickr-website-logo-silhouette"></i></a>
 											<div class="profile-icon-name">Sudo Security Bypass | Tryhackme</div>
 										</div>
 									</div>
@@ -492,11 +626,11 @@
 			<div class="section-heading text-center">
 				<h2>projects</h2>
 			</div>
-			<section id="excel-portfolio">
+			<!-- <section id="excel-portfolio">
 				<h2>Excel Skills Portfolio</h2>
 				<p>Click the link below to view and download my Excel portfolio, showcasing data analysis, dashboards, and automation projects.</p>
 				<a href="assets/download/Advanced_Excel_Projects.xlsx" download>Download Excel Portfolio</a>
-			  </section>
+			  </section> -->
 			  
 			<div class="clients-area">
 				<div class="container">
@@ -512,8 +646,8 @@
 							</a>
 						</div><!--/.item-->
 						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c3.png" alt="brand-image" />
+							<a href="https://pixelpulse-hub.onrender.com">
+								<img src="assets/images/clients/PixelPulse-Hub_web-banner.png" alt="brand-image" />
 							</a>
 						</div><!--/.item-->
 						<div class="item">
@@ -618,8 +752,7 @@
 								</div><!--/.contact-adress-->
 								<div class="hm-foot-icon">
 									<ul>
-										<li><a href="https://www.facebook.com/steve.ojiambo.790"><i class="fa fa-facebook"></i></a></li><!--/li-->
-										<!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li>/li -->
+										<li><a href="https://www.facebook.com/profile.php?id=61574090785817"><i class="fa fa-facebook"></i></a></li><!--/li-->
 										<li><a href="https://www.twitter.com/@shacker01_steve"><i class="fa fa-twitter"></i></a></li><!--/li-->
 										<li><a href="https://www.linkedin.com/in/steve-ojiambo-97276625a"><i class="fa fa-linkedin"></i></a></li><!--/li-->
 										<li><a href="https://github.com/shacker001"><i class="fa fa-github"></i></a></li><!--/li-->
@@ -639,7 +772,7 @@
 			<div class="container">
 				<div class="hm-footer-copyright text-center">
 					<p>
-						&copy; copyright 2024 by <a href="https://www.linkedin.com/in/steve-ojiambo-97276625a">sh4cker</a>. All rights reserved.
+						&copy; copyright 2025 by <a href="https://pixelpulse-hub.onrender.com">PixePulse Hub</a>. All rights reserved.
 					</p><!--/p-->
 				</div><!--/.text-center-->
 			</div><!--/.container-->

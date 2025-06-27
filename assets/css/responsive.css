@@ -44,7 +44,19 @@
 }/*max-width:991px*/
 
 @media screen and (max-width:768px){
+		.header-text h2 {
+		  font-size: 20px;
+		  text-align: center;
+		}
+	
+		.header-text p {
+		  font-size: 16px;
+		  margin: 20px 0 40px;
+		}
     
+		#typed-text {
+			font-size: 2.5rem;
+		  }
 }/*max-width:768px*/
 
 @media screen and (max-width:767px){
